@@ -7,48 +7,42 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <h1>BMW Pretoria</h1>
-  <nav><ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="products.html">Models</a></li>
-    <li><a href="enquiry.html">Book Test Drive</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul></nav>
-</header>
-
-<main style="display:block; width:90%; max-width:1200px; margin:0 auto; padding:2rem 0;">
-  <h2>Our Models <span style="color:#0066B1;">Collection</span></h2>
-  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; margin-top:2rem;">
-    
-    <div class="card" style="padding:2rem;">
-      <div style="background:#0066B1; height:12px; border-radius:10px 10px 0 0; margin:-2rem -2rem 1.5rem -2rem;"></div>
-      <h3>BMW 3 Series</h3>
-      <p>The iconic sports sedan. M Sport, 190kW TwinPower Turbo.</p>
-      <p><strong>From R895 000</strong></p>
-      <button>Configure</button>
+  <header>
+    <h1>BMW Pretoria</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Models</a>
+      <a href="enquiry.html">Book Test Drive</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="models-container">
+    <h2>Our Models <span>Collection</span></h2>
+    <div class="models-grid">
+      <div class="card">
+        <img src="images/bmw-3series.jpg" alt="BMW 3 Series" class="card-image">
+        <h3>BMW 3 Series</h3>
+        <p>The iconic sports sedan. M Sport, 190kW TwinPower Turbo.</p>
+        <p><strong>From R895 000</strong></p>
+        <button>Configure</button>
+      </div>
+      <div class="card">
+        <img src="images/bmw-x5.jpg" alt="BMW X5" class="card-image">
+        <h3>BMW X5</h3>
+        <p>The ultimate SUV. xDrive, panoramic roof, 7 seats.</p>
+        <p><strong>From R1 450 000</strong></p>
+        <button>Configure</button>
+      </div>
+      <div class="card">
+        <img src="images/bmw-m4.jpg" alt="BMW M4" class="card-image">
+        <h3>BMW M4</h3>
+        <p>The ultimate performance coupe. M TwinPower Turbo, 375kW, 0-100 in 3.5s.</p>
+        <p><strong>From R2 100 000</strong></p>
+        <button>Configure</button>
+      </div>
     </div>
-
-    <div class="card" style="padding:2rem;">
-      <div style="background:#111; height:12px; border-radius:10px 10px 0 0; margin:-2rem -2rem 1.5rem -2rem;"></div>
-      <h3>BMW X5</h3>
-      <p>The ultimate SUV. xDrive, panoramic roof, 7 seats.</p>
-      <p><strong>From R1 450 000</strong></p>
-      <button>Configure</button>
-    </div>
-
-    <div class="card" style="padding:2rem;">
-      <div style="background:#00a651; height:12px; border-radius:10px 10px 0 0; margin:-2rem -2rem 1.5rem -2rem;"></div>
-      <h3>BMW i4</h3>
-      <p>Fully electric. 400km range, zero emissions, instant torque.</p>
-      <p><strong>From R1 200 000</strong></p>
-      <button>Configure</button>
-    </div>
-
-  </div>
-</main>
-
-<footer><p>&copy; 2026 BMW Pretoria - 123 Lynnwood Road</p></footer>
+  </main>
+  <footer><p>&copy; 2026 BMW Pretoria - 123 Lynnwood Road</p></footer>
 </body>
 </html>
