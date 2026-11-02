@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BMW Pretoria - Enquiry</title><link rel="stylesheet" href="css/style.css"></head>
-<body>
-<header><h1>Book a Test Drive</h1><nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="products.html">Models</a></li><li><a href="enquiry.html">Book Test Drive</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-<main><form><label>Name:</label><input type="text" required><label>Email:</label><input type="email" required><label>Model:</label><select><option>3 Series</option><option>X5</option><option>M4</option></select><label>Message:</label><textarea></textarea><button type="submit">Submit</button></form></main>
-<footer><p>&copy; 2026 BMW Pretoria | ST10532782</p></footer>
-</body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW Enquiry - Book Test Drive Pretoria</title><meta name="description" content="Enquire about BMW services, test drive, volunteer, sponsor in Pretoria."><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"></head>
+<body><header><h1>Book Test Drive</h1><button id="hamburger">☰</button><nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="products.html">Models</a></li><li><a href="enquiry.html">Enquire</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main><form id="enquiryForm" action="#"><h2>Enquiry Form</h2><label>Name<input type="text" name="name" required></label><label>Email<input type="email" name="email" required></label><label>Phone<input type="tel" name="phone" placeholder="0123456789"></label><label>Interest<select name="interest"><option>Test Drive</option><option>Service</option><option>Sponsorship</option><option>Volunteer</option></select></label><label>Message<textarea name="message" required></textarea></label><button type="submit">Submit Enquiry</button></form></main>
+<footer><p>&copy; <span id="year"></span> BMW Pretoria</p></footer><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script src="js/script.js"></script></body></html>

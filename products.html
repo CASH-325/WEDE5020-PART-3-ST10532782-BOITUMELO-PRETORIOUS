@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BMW Pretoria - Models</title><link rel="stylesheet" href="css/style.css"></head>
-<body>
-<header><h1>Our Models</h1><nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="products.html">Models</a></li><li><a href="enquiry.html">Book Test Drive</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-<main><div class="models-container"><div class="models-grid">
-<div class="card"><img src="images/bmw-3series.jpg" srcset="images/bmw-3series.jpg 480w, images/bmw-3series.jpg 800w" sizes="(max-width: 768px) 100vw, 33vw" alt="BMW 3 Series" class="card-image"><h3>BMW 3 Series</h3><p>From R800,000</p><a href="enquiry.html"><button>Enquire</button></a></div>
-<div class="card"><img src="images/bmw-x5.jpg" srcset="images/bmw-x5.jpg 480w, images/bmw-x5.jpg 800w" sizes="(max-width: 768px) 100vw, 33vw" alt="BMW X5" class="card-image"><h3>BMW X5</h3><p>From R1,300,000</p><a href="enquiry.html"><button>Enquire</button></a></div>
-<div class="card"><img src="images/bmw-m4.jpg" srcset="images/bmw-m4.jpg 480w, images/bmw-m4.jpg 800w" sizes="(max-width: 768px) 100vw, 33vw" alt="BMW M4" class="card-image"><h3>BMW M4</h3><p>From R1,800,000</p><a href="enquiry.html"><button>Enquire</button></a></div>
-</div></div></main>
-<footer><p>&copy; 2026 BMW Pretoria | ST10532782</p></footer>
-</body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW Models Pretoria - 3 Series, X5, M4 Price List</title><meta name="description" content="View BMW models in Pretoria: BMW 3 Series, X5, M4 with prices. Filter and search models."><meta name="keywords" content="BMW Models, BMW price Pretoria, BMW X5, BMW M4"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"></head>
+<body><header><h1>BMW Models</h1><button id="hamburger">☰</button><nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="products.html">Models</a></li><li><a href="enquiry.html">Enquire</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main><div class="models-container"><h2>Our BMW Range</h2><input type="text" id="searchBox" placeholder="Search BMW models - e.g. X5 or sedan" style="padding:0.7rem;width:100%;max-width:400px;margin:1rem 0">
+<div class="tabs"><button class="tab-btn active" data-tab="all">All</button><button class="tab-btn" data-tab="sedan">Sedan</button><button class="tab-btn" data-tab="suv">SUV</button></div>
+<div id="dynamic-grid" class="models-grid"></div><div id="all" class="tab-content active"></div><div id="sedan" class="tab-content"></div><div id="suv" class="tab-content"></div>
+</div><div id="modal" class="modal"><div class="modal-content"><span id="closeModal" class="close">&times;</span><h3>Enquire About This Model</h3><p>Go to <a href="enquiry.html">Enquiry Form</a> to get cost and availability.</p></div></div></main>
+<footer><p>&copy; <span id="year"></span> BMW Pretoria</p></footer><script src="https://unpkg.com/leaflet/dist/leaflet.js"></script><script src="js/script.js"></script></body></html>
